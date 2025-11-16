@@ -1,0 +1,61 @@
+# Jekyll configuration file for GitHub Pages
+# This works with themes like "minimal", "cayman", "jekyll-theme-minimal", etc.
+
+# ---- Site Settings ----
+title: "Dr. Nabanita Choudhury"
+description: "Academic Profile | Assistant Professor–II, SAII | Artificial Intelligence, XAI, Medical AI"
+url: "https://<your-github-username>.github.io"
+baseurl: ""  # Leave empty for root-level site
+
+# ---- Build Settings ----
+theme: jekyll-theme-minimal
+markdown: kramdown
+highlighter: rouge
+
+# ---- Navigation Menu ----
+# Add more pages as needed (About, Research, Publications, Resume, Contact)
+navbar:
+  - name: "Home"
+    link: "/"
+  - name: "About"
+    link: "/about.html"
+  - name: "Research"
+    link: "/research.html"
+  - name: "Publications"
+    link: "/publications.html"
+  - name: "Contact"
+    link: "/contact.html"
+
+# ---- Author Info ----
+author:
+  name: "Dr. Nabanita Choudhury"
+  email: "nabaniitaa@gmail.com"
+  scholar: "# add your Google Scholar link"
+  researchgate: "# add your ResearchGate link"
+  linkedin: "# add your LinkedIn profile"
+
+# ---- Plugins (optional) ----
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# ---- SEO & Social Preview ----
+seo:
+  type: "ProfilePage"
+  name: "Dr. Nabanita Choudhury"
+  description: "Assistant Professor–II, Artificial Intelligence Researcher"
+  email: "nabaniitaa@gmail.com"
+
+# ---- Defaults ----
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# ---- Exclude System Files ----
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
